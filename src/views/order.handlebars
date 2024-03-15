@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resumen de la Orden</title>
+</head>
+<body>
+    <h1>Resumen de la Orden</h1>
+    <h2>Productos Seleccionados:</h2>
+    <ul>
+        {{#each selectedProducts}}
+            <li>{{this.name}} - Cantidad: {{this.quantity}}</li>
+        {{/each}}
+    </ul>
+    <h2>Información de Envío:</h2>
+    <!-- Mostrar información de envío aquí -->
+    <h2>Método de Pago:</h2>
+    <!-- Mostrar método de pago aquí -->
+    <h2>Total a Pagar: {{totalPrice}}</h2>
+    <button onclick="confirmOrder()">Confirmar Orden</button>
+</body>
+</html>
