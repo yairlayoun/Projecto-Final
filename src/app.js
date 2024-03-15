@@ -16,8 +16,7 @@ import { setupProductSwagger } from "./swagger/products/swagger.js";
 import swaggerUi from 'swagger-ui-express';
 import path from "path";
 import { fileURLToPath } from 'url';
-import { Routes, Route } from 'react-router-dom';
-import React, { Suspense } from 'react';
+
 
 const app = express();
 app.listen(8080, () => console.log("Listening on 8080"));
